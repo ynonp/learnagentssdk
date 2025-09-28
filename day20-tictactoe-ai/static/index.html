@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <main class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div id="status" class="message">Your turn (X)</div>
+        <div id="board" class="board" aria-label="Tic Tac Toe board" role="grid"></div>
+        <div class="controls">
+          <button id="reset" class="btn" type="button">Reset</button>
+        </div>
+      </main>
+      
+      <aside class="chat-sidebar">
+        <div class="chat-header">
+          <h2>Chat Assistant</h2>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <div class="message assistant">
+            <div class="message-content">Hi! I'm here to help you with tic tac toe. Ask me anything about strategy or just chat!</div>
+          </div>
+        </div>
+        <div class="chat-input-container">
+          <div class="chat-input-wrapper">
+            <input type="text" id="chat-input" placeholder="Ask me about tic tac toe strategy..." />
+            <button id="send-btn" class="btn send-btn">Send</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
